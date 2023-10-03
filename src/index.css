@@ -600,8 +600,16 @@ video {
   width: 15rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .cursor-not-allowed {
   cursor: not-allowed;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -610,6 +618,10 @@ video {
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .rounded {
@@ -672,6 +684,10 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-2xl {

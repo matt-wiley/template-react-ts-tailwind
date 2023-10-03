@@ -65,7 +65,7 @@ const Button = (props: IButtonProps) => {
 
     const label = props.label || 'Button';
     const tooltip = props.tooltip || label;
-    const style = styleForType( type || ButtonType.Primary, disabled || false );
+    const style = styleForType(type || ButtonType.Primary, disabled || false);
 
     const handleOnClick = () => {
         if (disabled) return;

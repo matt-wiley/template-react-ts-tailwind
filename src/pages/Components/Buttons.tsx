@@ -1,10 +1,10 @@
-import Button from "../components/Button";
+import Button from "../../components/Button";
 
-interface IDevProps {
+interface IButtonsProps {
 
 }
 
-const Dev = (props: IDevProps) => {
+const Buttons = (props: IButtonsProps) => {
   return (
     <div className="flex flex-col justify-start p-1 w-60 m-auto">
       <Button type="primary" label="Primary" />
@@ -29,4 +29,4 @@ const Dev = (props: IDevProps) => {
   );
 };
 
-export default Dev;
+export default Buttons;
