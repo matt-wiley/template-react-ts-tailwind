@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 enum ButtonType {
+    // TODO: Do we need all these types?
     Primary = 'primary',
     Secondary = 'secondary',
     Tertiary = 'tertiary',
@@ -16,6 +17,7 @@ enum ButtonType {
 
 interface IButtonProps {
     label?: string;
+    tooltip?: string;
     type?: ButtonType | string;
     href?: string;
     path?: string;
@@ -59,10 +61,11 @@ const styleForType = (type: ButtonType | string, isDisabled: boolean) => {
 const Button = (props: IButtonProps) => {
     const navigate = useNavigate();
 
-    const { path, href, disabled } = props;
+    const { type, path, href, disabled } = props;
 
     const label = props.label || 'Button';
-    const style = styleForType( props.type || ButtonType.Primary, props.disabled || false );
+    const tooltip = props.tooltip || label;
+    const style = styleForType( type || ButtonType.Primary, disabled || false );
 
     const handleOnClick = () => {
         if (disabled) return;
@@ -79,7 +82,7 @@ const Button = (props: IButtonProps) => {
     }
 
     return (
-        <button className={style} title={label} onClick={handleOnClick}>{label}</button>
+        <button className={style} title={tooltip} onClick={handleOnClick}>{label}</button>
     );
 
 };

@@ -24,6 +24,7 @@ const Dev = (props: IDevProps) => {
             <Button type="none" label="None" />
             <Button type="primary" label="Disabled" disabled />
             <Button type="primary" />
+            <Button type="primary" label="Custom Tooltip" tooltip="Not the label text." />
         </div>
     );
 };
