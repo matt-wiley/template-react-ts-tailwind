@@ -25,6 +25,13 @@ const Buttons = (props: IButtonsProps) => {
       <Button type="primary" label="Disabled" disabled />
       <Button type="primary" />
       <Button type="primary" label="Custom Tooltip" tooltip="Not the label text." />
+      <hr />
+      <hr />
+      <Button size="xs" type="primary" label="Extra Small" />
+      <Button size="sm" type="primary" label="Small" />
+      <Button size="md" type="primary" label="Medium" />
+      <Button size="lg" type="primary" label="Large" />
+      <Button size="xl" type="primary" label="Extra Large" />
     </div>
   );
 };

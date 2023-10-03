@@ -11,8 +11,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LayoutOne /> }>
           <Route path="dev" element={<Dev /> } />
-          <Route path="components" element={<Components /> } />
-          <Route path="components/buttons" element={<Buttons /> } />
+          <Route path="components" element={<Components /> }>
+            <Route path="buttons" element={<Buttons /> } />
+          </Route>
         </Route>
       </Routes>
     </HashRouter>

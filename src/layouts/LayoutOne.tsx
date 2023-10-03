@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import Nav from "../parts/Nav";
+import Nav from "../components/Nav";
 
 interface ILayoutOneProps {
 
@@ -8,7 +8,12 @@ interface ILayoutOneProps {
 const LayoutOne = (props: ILayoutOneProps) => {
   return (
     <div>
-      <Nav />
+      <Nav
+        navItems={{
+          "Home": "/",
+          "Dev": "/dev",
+          "Components": "/components"
+        }} />
       <Outlet />
     </div>
   );
