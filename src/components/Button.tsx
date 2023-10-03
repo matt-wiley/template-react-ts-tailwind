@@ -12,7 +12,11 @@ const Button = (props: IButtonProps) => {
     }
 
     return (
-        <button className="button" title={label} onClick={handleClick}>{label}</button>
+        <button 
+            className=" bg-slate-100 border p-2" 
+            title={label} 
+            onClick={handleClick}
+            >{label}</button>
     );
 };
 
