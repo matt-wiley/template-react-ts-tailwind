@@ -1,9 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Nav from "../components/Nav";
 
-interface ILayoutOneProps {
-
-}
+interface ILayoutOneProps {}
 
 const LayoutOne = (props: ILayoutOneProps) => {
   return (

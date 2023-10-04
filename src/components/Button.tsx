@@ -42,15 +42,15 @@ const styleForType = (type: ButtonType | string, size: ButtonSize | string, isDi
         return `bg-gray-100 text-gray-300 cursor-not-allowed`
       else {
         return {
-          "primary": `bg-blue-500 hover:bg-blue-700 text-white`,
-          "secondary": `bg-gray-500 hover:bg-gray-700 text-white`,
-          "tertiary": `bg-green-500 hover:bg-green-700 text-white`,
-          "danger": `bg-red-500 hover:bg-red-700 text-white`,
-          "warning": `bg-yellow-500 hover:bg-yellow-700 text-white`,
-          "success": `bg-green-500 hover:bg-green-700 text-white`,
-          "info": `bg-blue-500 hover:bg-blue-700 text-white`,
-          "light": `bg-gray-300 hover:bg-gray-400 text-white`,
-          "dark": `bg-gray-700 hover:bg-gray-800 text-white`,
+          "primary": `bg-blue-500 hover:bg-blue-700 text-white shadow-lg`,
+          "secondary": `bg-gray-500 hover:bg-gray-700 text-white shadow-lg`,
+          "tertiary": `bg-green-500 hover:bg-green-700 text-white shadow-lg`,
+          "danger": `bg-red-500 hover:bg-red-700 text-white shadow-lg`,
+          "warning": `bg-yellow-500 hover:bg-yellow-700 text-white shadow-lg`,
+          "success": `bg-green-500 hover:bg-green-700 text-white shadow-lg`,
+          "info": `bg-blue-500 hover:bg-blue-700 text-white shadow-lg`,
+          "light": `bg-gray-300 hover:bg-gray-400 text-white shadow-lg`,
+          "dark": `bg-gray-700 hover:bg-gray-800 text-white shadow-lg`,
           "link": `bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white`,
           "none": `bg-transparent hover:bg-transparent text-blue-700 hover:text-blue-500`
         }[`${type}`];
