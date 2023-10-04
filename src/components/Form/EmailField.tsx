@@ -1,20 +1,18 @@
 import TextField from "./TextField";
+import { InputProps } from "./utils";
 
-interface IEmailFieldProps {
-  value: string;
-  onChange: (value: string) => void;
-  formatter?: (value: string) => string;
-}
 
-const EmailField = (props: IEmailFieldProps) => {
+const EmailField = (props: InputProps) => {
+
+  const defaultedProps = {
+    ...props,
+    label: props.label || "Email",
+    placeholder: props.placeholder || "someone@example.com",
+    state: props.state || "empty"
+  }
+
   return (
-    <TextField
-      {...props}
-      label="Email"
-      type="email"
-      placeholder="user@example.com"
-      validation={/^.+@.+\..+$/} 
-      />
+    <TextField {...defaultedProps} />
   );
 };
 

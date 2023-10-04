@@ -67,7 +67,7 @@ const styleForType = (type: ButtonType | string, size: ButtonSize | string, isDi
       }[`${size}`];
     })();
 
-    return `${typeStyle} ${sizeStyle} transition duration-100 ease-in-out}`
+    return `${typeStyle} ${sizeStyle} transition duration-100 ease-in-out`
   
 }
 

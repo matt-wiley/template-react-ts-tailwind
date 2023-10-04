@@ -1,20 +1,17 @@
 import TextField from "./TextField";
+import { InputProps } from "./utils";
 
-interface IUrlFieldProps {
-  value: string;
-  onChange: (value: string) => void;
-  formatter?: (value: string) => string;
-}
+const UrlField = (props: InputProps) => {
 
-const UrlField = (props: IUrlFieldProps) => {
+  const defaultedProps = {
+    ...props,
+    label: props.label || "URL",
+    placeholder: props.placeholder || "https://www.example.com",
+    state: props.state || "empty"
+  }
+
   return (
-    <TextField
-      {...props}
-      label="URL"
-      type="text"
-      placeholder="https://www.example.com"
-      validation={/https?:\/\/[\w\-.]+(:\d+)?(\/.*)?/}
-      />
+    <TextField {...defaultedProps} />
   );
 };
 
