@@ -18,3 +18,7 @@ export interface InputProps {
   state?: InputState | string;
   placeholder?: string;
 }
+
+export interface IInputFC {
+  (props: InputProps): JSX.Element;
+}
